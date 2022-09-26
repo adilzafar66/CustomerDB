@@ -1,0 +1,67 @@
+/* Apply on all elements */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+
+    /* Set Defaults */
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+    /* background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+}
+
+.nav-bar, .menu, .submenu {
+    width: 100%;
+    display: flex;
+}
+
+.nav-bar {
+    /* position: fixed;
+    top: 0; */
+    height: 4rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.menu, .submenu {
+    align-items: center;
+}
+
+.submenu {
+    flex-direction: row-reverse;
+}
+
+.menu-item, .submenu-item {
+    margin: 0% 5%;
+}
+
+.menu-item a, .submenu-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item a:hover, .submenu-item a:hover {
+    color: rgb(116, 116, 116);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    filter: invert(100%);
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,50 @@
+
+/* Declare variables in root */
+:root {
+
+    /* Color Scheme */
+    --clr-primary: white;
+    --clr-primary-light: ;
+    --clr-secondary: black;
+    --clr-secondary-light: ;
+    --clr-tertiary: ;
+    --clr-tertiary-light: ;
+    --clr-alert: rgb(178 33 33);
+
+    /* Font Family */
+    --ff-primary: ;
+    --ff-secondary: ;
+
+    /* Font Weight */
+    --fw-regular: ;
+    --fw-semi-bold: ;
+    --fw-bold: ;
+
+    /* Font Color */
+    --fc-primary: ;
+    --fc-secondary: ;
+
+    /* Font Size */
+    --fs-smallest: ;
+    --fs-smaller: ;
+    --fs-small: ;
+    --fs-regular: ;
+    --fs-large: 2rem;
+    --fs-larger: 3rem;
+    --fs-largest: ;
+
+}
+
+@media (min-width: 800px){
+
+    :root {
+
+        /* Font Size */
+        --fs-h1: ;
+        --fs-h2: ;
+        --fs-h3: ;
+        --fs-h4: ;
+        --fs-body: ;
+    }
+    
+}

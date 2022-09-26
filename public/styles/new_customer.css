@@ -1,0 +1,38 @@
+.content {
+    width: 100%;
+    margin-top: 2%;
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.new-customer-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3%;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.new-customer-form [type="text"] {
+    font-family: inherit;
+    margin: 2.5% 0%;
+    padding: 2% 2%;
+    border-radius: 6px;
+    border: 1px solid black;
+
+}
+
+.new-customer-form [type="submit"]{
+    width: 33%;
+    margin-top: 4%;
+    padding: 1.5% 1%;
+    border-radius: 6px;
+    border: none;
+    background-color: black;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}

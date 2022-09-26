@@ -1,0 +1,90 @@
+
+/* Font Classes */
+
+.fc-primary {
+    color: var(--clr-primary);
+}
+
+.fc-secondary {
+    color: var(--clr-secondary);
+}
+
+.fc-tertiary {
+    color: var(--clr-tertiary);
+}
+
+.fw-bold{
+    font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fs-heading-primary {
+    font-size: var(--fs-largest);
+}
+
+.fs-heading-secondary {
+    font-size: var(--fs-larger);
+}
+
+.fs-smallest {
+    font-size: var(--fs-smallest);
+}
+
+.fs-smaller {
+    font-size: var(--fs-smaller);
+}
+
+.fs-small {
+    font-size: var(--fs-small);
+}
+
+.fs-regular{
+    font-size: var(--fs-regular);
+}
+
+.fs-large{
+    font-size: var(--fs-large);
+}
+
+.fs-larger{
+    font-size: var(--fs-larger);
+}
+
+.fs-largest{
+    font-size: var(--fs-largest);
+}
+
+
+
+/* Background Classes */
+
+.bg-alert {
+    background-color: var(--clr-alert) !important;
+}
+
+/* Widgets */
+
+.button {
+    width: 95%;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+}
+
+.text-field {
+    padding: 2%;
+    border-radius: 6px;
+    border: 1px solid var(--clr-secondary);
+}
+
+.hidden {
+    display: none !important;
+}

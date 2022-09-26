@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/styles/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/login.js" defer></script>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <div class="content">
+        <div class="login-box">
+            <div class="login-title fs-larger"><i class="fa-solid fa-user"></i></i></div>
+            <form class="login-form">
+                <div class="input-container">
+                    <input class="box-input" type="text" id="username" name="username" placeholder="Email or username">
+                </div>
+                <div class="input-container">
+                    <input class="box-input" type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class="forgot-pass">
+                    <a href="">Forgot password?</a>
+                </div>
+                <div class="btn-container">
+                    <input class="submit-btn" type="submit" value="Log In">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

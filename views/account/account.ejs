@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="./styles/account.css">
+    <script src="./scripts/account.js" type="module" defer></script>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <div class="content">
+        <div class="navbar">
+            <div class="collapse-icon">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right hidden"></i>
+            </div>
+            <div class="navbar-elem" id="profile"><a href="/account/profile"><i class="fa-solid fa-address-card"></i>Profile</a></div>
+            <div class="navbar-elem" id="settings"><a href="/account/settings"><i class="fa-solid fa-gear"></i>Settings</a></div>
+            <div class="navbar-elem"><a href="/account/about" id="about">About</a></div>
+            <div class="navbar-elem"><a href="">More</a></div>
+            <div class="navbar-elem"><a href="">Stuff</a></div>
+        </div>
+        <div class="container">
+        </div>
+    </div>
+</body>
+</html>

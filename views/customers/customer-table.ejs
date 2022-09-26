@@ -1,0 +1,17 @@
+<div class="tbl-header">
+    <div class="checkbox"><input type="checkbox" name="tbl-check-all"></div>
+    <div class="tbl-elem">Name</div>
+    <div class="tbl-elem">Age</div>
+    <div class="tbl-elem">Phone</div>
+    <div class="tbl-elem">Email</div>
+</div>
+<% customers.forEach(customer => { %>
+<div class="tbl-row" id="<%= customer.id %>">
+    <div class="checkbox"><input type="checkbox" name="tbl-check-elem"></div>
+    <div class="tbl-elem" id="name"><%= customer.name %></div>
+    <div class="tbl-elem" id="age"><%= customer.age %></div>
+    <div class="tbl-elem" id="phone"><%= customer.phone %></div>
+    <div class="tbl-elem" id="email"><%= customer.email %></div>
+    <div class="done-btn"><button class="button" style="display: none;">Done</button></div>
+</div>
+<% }); %>

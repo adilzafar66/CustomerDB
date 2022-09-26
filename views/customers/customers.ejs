@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="./styles/customers.css">
+    <script src="./scripts/customers.js" type="module" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <div class="content">
+        <div class="action-buttons">
+            <a><button class="new-btn button" title="Add"><i class="fa-solid fa-plus"></i></button></a>
+            <a>
+                <input type="file" id="excel-import" name="filename" hidden>
+                <button class="import-btn button" title="Import Excel"><i class="fa-solid fa-file-arrow-up"></i></button>
+            </a>
+            <a><button class="delete-btn button" title="Delete"><i class="fa-solid fa-trash-can"></i></button></a>
+            <a><button class="cancel-btn button" title="Cancel"><i class="fa-solid fa-ban"></i></button></a>
+            <a><button class="save-btn button" title="Save"><i class="fa-solid fa-floppy-disk"></i></button></a>
+            <!-- <form action="/customers/save" method="post">
+                <input class="save-btn button" type="submit" value="Save"/>
+            </form> -->
+        </div>
+        <div class="save-msgbox" style="display: none;">
+            <div class="close-msg"><i class="fa-solid fa-xmark"></i></div>
+            <span>Saved Succesfully!</span>
+        </div>
+        <div class="error-msgbox" style="display: none;">
+            <div class="close-msg"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="data-table">
+            <%- include('./customer-table.ejs', {customers: customers}) %>
+        </div>
+    </div>
+</body>
+</html>

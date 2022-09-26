@@ -1,0 +1,21 @@
+<div class="heading fs-large">Profile</div>
+<div class="profile">
+    <div class="profile-labels">
+        <div class="profile-label">Name:</div>
+        <div class="profile-label">Email:</div>
+        <div class="profile-label">Username:</div>
+        <div class="profile-label">Date Joined:</div>
+        <div class="profile-label">Customers:</div>
+    </div>
+    <div class="profile-elems">
+        <div class="profile-elem"><%= user.name %></div>
+        <div class="profile-elem"><%= user.email %></div>
+        <div class="profile-elem"><%= user.username %></div>
+        <div class="profile-elem"><%= user.createdAt.toLocaleDateString('en-US') %></div>
+        <div class="profile-elem"><%= customers.length %></div>
+    </div>
+</div>
+<div class="cmd-btns">
+    <button class="button">Save</button>
+    <button class="button">Reset</button>
+</div>

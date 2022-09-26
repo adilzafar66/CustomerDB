@@ -1,0 +1,129 @@
+.hidden {
+    display: none;
+}
+
+.content {
+    width: 100%;
+    margin-top: 4%;
+    padding: 2% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    margin-left: 1%;
+    width: 5%;
+    border-radius: 50%;
+}
+
+.button {
+    padding: 6px 0px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(79, 79, 79);
+}
+
+.done-btn {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.done-btn .button {
+    margin-left: 35%;
+    margin-bottom: 10%;
+    width: 120%;
+}
+
+.save-msgbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    padding: 8%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.error-msgbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    padding: 8%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.close-msg {
+    position: absolute;
+    top: 4%;
+    left: 92%;
+    cursor: pointer;
+}
+
+.data-table{
+    width: 100%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.tbl-row, .tbl-header{
+    display: grid;
+    padding: 1.5% 0%;
+    grid-template-columns: 0.5fr 1fr 0.5fr 1fr 1.5fr;
+}
+
+.tbl-row {
+    height: 3em;
+    transition: all 0.4s;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.expanded {
+    height: 8em;
+}
+
+.tbl-header{
+    background-color: black;
+    color: white;
+}
+
+.tbl-row:hover {
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+
+.tbl-elem {
+    padding-left: 6%;
+}
+
+.tbl-elem input {
+    width: 90%; 
+    font: inherit;
+    padding-left: 0.5rem;
+    /* border-radius: 5px;
+    border: solid 1px; */
+}
+
+.checkbox {
+    text-align: center;
+}
+.checkbox [type=checkbox] {
+    cursor: pointer;
+}
